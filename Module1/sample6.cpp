@@ -1,4 +1,4 @@
-//permentation string
+//permutation string
 #include <iostream>
 using namespace std;
 
