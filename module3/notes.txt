@@ -1,0 +1,21 @@
+Brute Force
+
+Brute force is a straightforward approach to solving problems by systematically checking all possible solutions. It is based directly on the problem's statement and definitions.
+
+Strengths:
+
+    Wide applicability: Can be applied to almost any problem.
+
+    Simplicity: Easy to understand and implement.
+
+    Reasonable for small problems: Works well for problems like matrix multiplication, sorting, and searching.
+
+Weaknesses:
+
+    Inefficiency: Often results in slow algorithms, especially for large problems.
+
+    Not constructive: Doesn’t provide insights into the problem structure.
+
+
+
+
