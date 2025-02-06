@@ -1,1 +1,97 @@
 Devide and Conquer 
+
+1. Introduction to Divide and Conquer
+Definition: Divide and Conquer is a problem-solving paradigm where a problem is broken down into smaller sub-problems, which are solved independently. The solutions to the sub-problems are then combined to solve the original problem.
+  Steps:
+    Divide: Break the problem into smaller sub-problems.
+    Conquer: Solve the sub-problems recursively.
+    Combine: Merge the solutions of the sub-problems to get the solution to the original problem.
+2. Examples of Divide and Conquer Algorithms
+  Merge Sort: A sorting algorithm that divides the array into two halves, sorts each half, and then merges the two sorted halves.  
+  Quick Sort: A sorting algorithm that selects a pivot element and partitions the array into two sub-arrays, then recursively sorts the sub-arrays.
+  Binary Search: A search algorithm that finds the position of a target value within a sorted array by repeatedly dividing the search interval in half.
+
+1. Merge Sort Algorithm
+Algorithm:
+  Divide:
+    Split the array into two halves.
+    Recursively divide each half until the array is broken down into single elements.
+  Conquer:
+    Sort the individual elements.
+  Merge:
+    Merge the sorted halves back together in sorted order.
+
+Simulation:
+  Simulate the algorithm for the array: [12, 11, 13, 5, 6, 7].
+
+Divide:
+Split into [12, 11, 13] and [5, 6, 7].
+Split [12, 11, 13] into [12], [11, 13].
+Split [11, 13] into [11] and [13].
+Split [5, 6, 7] into [5], [6, 7].
+Split [6, 7] into [6] and [7].
+
+Conquer:
+Sort [11] and [13] into [11, 13].
+Sort [6] and [7] into [6, 7].
+
+Merge:
+Merge [12] and [11, 13] into [11, 12, 13].
+Merge [5] and [6, 7] into [5, 6, 7].
+Merge [11, 12, 13] and [5, 6, 7] into [5, 6, 7, 11, 12, 13].
+
+2. Quick Sort Algorithm
+Algorithm:
+  Partition:
+    Choose a pivot element (e.g., the last element).
+    Rearrange the array so that elements smaller than the pivot are on the left, and elements greater than the pivot are on the right.
+  Recursively Sort:
+    Recursively apply the partition step to the left and right sub-arrays.
+  Combine:
+    No explicit combine step is needed, as the array is sorted in place.
+
+Simulation:
+Simulate the algorithm for the array: [10, 7, 8, 9, 1, 5].
+
+Partition:
+Pivot = 5.
+Rearrange: [1, 5, 8, 9, 10, 7].
+
+Recursively Sort:
+Left sub-array: [1] (already sorted).
+Right sub-array: [8, 9, 10, 7].
+Pivot = 7.
+Rearrange: [7, 8, 9, 10].
+Recursively sort [7] and [8, 9, 10].
+[8, 9, 10] is already sorted.
+
+Final Sorted Array:
+[1, 5, 7, 8, 9, 10].
+
+3. Binary Search Algorithm
+Algorithm:
+
+  Initialize:
+    Set low = 0 and high = n - 1, where n is the size of the array.
+  Search:
+    Calculate mid = low + (high - low) / 2.
+    If the middle element is the target, return its index.
+    If the target is smaller than the middle element, set high = mid - 1.
+    If the target is larger than the middle element, set low = mid + 1.
+  Repeat:
+    Repeat the search until low > high. If the target is not found, return -1.
+
+Simulation:
+Simulate the algorithm for the array: [2, 3, 4, 10, 40] and target = 10.
+
+Initialization:
+low = 0, high = 4.
+Iteration 1:
+mid = 0 + (4 - 0) / 2 = 2.
+Middle element = 4 (not the target).
+Since 10 > 4, set low = mid + 1 = 3.
+Iteration 2:
+mid = 3 + (4 - 3) / 2 = 3.
+Middle element = 10 (target found).
+Return index 3.
+
