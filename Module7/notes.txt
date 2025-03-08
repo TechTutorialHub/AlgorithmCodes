@@ -1,1 +1,18 @@
-Notes
+A greedy algorithm makes the locally optimal choice at each step with the hope of finding a global optimum. It builds a solution incrementally, choosing the next step that offers the most immediate benefit.
+
+Components :
+
+Candidate Set: The pool of choices (e.g., edges in a graph).
+Selection Function: Chooses the best candidate (e.g., smallest weight).
+Feasibility Function: Ensures the candidate contributes to a valid solution.
+Objective Function: Assigns a value to a solution (e.g., total weight).
+Solution Function: Determines when a complete solution is found.
+
+Advantages :
+
+Simple to implement.
+Efficient.
+
+Disadvantages :
+
+Does not guarantee optimal solutions for all problems (e.g., Traveling Salesman Problem).
