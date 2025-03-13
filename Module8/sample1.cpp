@@ -1,4 +1,23 @@
 //regular fibo
+/*
+
+fibonacciRecursive(5)
+├── fibonacciRecursive(4)
+│   ├── fibonacciRecursive(3)
+│   │   ├── fibonacciRecursive(2)
+│   │   │   ├── fibonacciRecursive(1)
+│   │   │   └── fibonacciRecursive(0)
+│   │   └── fibonacciRecursive(1)
+│   └── fibonacciRecursive(2)
+│       ├── fibonacciRecursive(1)
+│       └── fibonacciRecursive(0)
+└── fibonacciRecursive(3)
+    ├── fibonacciRecursive(2)
+    │   ├── fibonacciRecursive(1)
+    │   └── fibonacciRecursive(0)
+    └── fibonacciRecursive(1)
+
+*/
 
 #include <iostream>
 using namespace std;
