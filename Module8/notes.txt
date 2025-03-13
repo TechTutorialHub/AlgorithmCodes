@@ -1,1 +1,6 @@
 Module 8
+
+Dynamic programming (DP) is a powerful algorithmic technique used to solve optimization problems by breaking them into smaller sub-problems. 
+Unlike divide-and-conquer, DP stores the results of sub-problems to avoid redundant computations, making it highly efficient for problems with overlapping sub-problems.
+
+
